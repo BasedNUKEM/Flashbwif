@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>$BWIF Flash-Hattening | BaseWIF</title>
-  <meta name="description" content="Participate in the world's first sub-200ms mass hat equip on Base blockchain. Equip your $BWIF Hat during the flash window and experience flashblock energy!">
+  <meta name="description" content="Join the 500-man FLASH-HATTENING challenge — the world's fastest synchronized hat equip event on Base.">
   <meta name="keywords" content="BaseWIF, BWIF, Flash-Hattening, Hat Minting, Blockchain, Base, NFT, Flashblock, Coinbase Smart Wallet">
   <meta name="author" content="BaseWIF Team">
   <link rel="canonical" href="https://basewifhat.com/flash-hattening">
 
   <!-- Favicon -->
-  <link rel="icon" href="https://basewifhat.com/_assets/media/56cc5d833842a2b69f2da481cd430364.png" type="image/png">
+  <link rel="icon" href="https://basewifhat.com/_assets/media/52cc6d39394e71550e1423458ac6a4b1.png" type="image/png">
 
   <!-- Theme color for mobile browser -->
   <meta name="theme-color" content="#0052FF">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="$BWIF Flash-Hattening | BaseWIF">
-  <meta property="og:description" content="Participate in the world's first sub-200ms mass hat equip on Base blockchain. Equip your $BWIF Hat during the flash window and experience flashblock energy!">
+  <meta property="og:description" content="500 people. One flashblock. World record attempt.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://basewifhat.com/flash-hattening">
   <meta property="og:image" content="https://basewifhat.com/_assets/media/56cc5d833842a2b69f2da481cd430364.png">
@@ -26,276 +26,124 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="$BWIF Flash-Hattening | BaseWIF">
-  <meta name="twitter:description" content="Participate in the world's first sub-200ms mass hat equip on Base blockchain. Equip your $BWIF Hat during the flash window and experience flashblock energy!">
+  <meta name="twitter:description" content="Join the synchronized 500-person Base hat equip world record attempt.">
   <meta name="twitter:image" content="https://basewifhat.com/_assets/media/56cc5d833842a2b69f2da481cd430364.png">
   <meta name="twitter:site" content="@BaseWIF">
   <meta name="twitter:creator" content="@BaseWIF">
 
-  <!-- Canva Sans font -->
+  <!-- Fonts -->
   <style>
-    @font-face {
-      font-display: swap;
-      font-family: 'Canva Sans';
-      font-style: normal;
-      font-weight: 400 700;
-      src: url('https://basewifhat.com/_assets/static_font_4/images/a9b8e7902ec1ab885d382156f33738e5.woff2') format("woff2"),
-           url('https://basewifhat.com/_assets/static_font_4/images/013277426f0d555d96c7a75503df5754.woff') format("woff");
-    }
-    @font-face {
-      font-display: swap;
-      font-family: 'Canva Sans';
-      font-style: normal;
-      font-weight: 400 700;
-      src: url('https://basewifhat.com/_assets/static_font_4/images/d97a6ffa507b670a5b1664f98fc1183d.woff2') format("woff2"),
-           url('https://basewifhat.com/_assets/static_font_4/images/1de7434d86166b0614ff3d61cda11a54.woff') format("woff");
-    }
-    @font-face {
-      font-display: swap;
-      font-family: 'Canva Sans';
-      font-style: normal;
-      font-weight: 400 700;
-      src: url('https://basewifhat.com/_assets/static_font_4/images/cff149ee1e9d2be50ac77bcd86769d05.woff2') format("woff2"),
-           url('https://basewifhat.com/_assets/static_font_4/images/f93a5165fac252ecfd593929c4e.woff') format("woff");
-    }
+    @font-face { font-display: swap; font-family: 'Canva Sans'; font-style: normal; font-weight: 400 700; src: url('https://basewifhat.com/_assets/static_font_4/images/a9b8e7902ec1ab885d382156f33738e5.woff2') format("woff2"), url('https://basewifhat.com/_assets/static_font_4/images/013277426f0d555d96c7a75503df5754.woff') format("woff"); }
+    @font-face { font-display: swap; font-family: 'Canva Sans'; font-style: normal; font-weight: 400 700; src: url('https://basewifhat.com/_assets/static_font_4/images/d97a6ffa507b670a5b1664f98fc1183d.woff2') format("woff2"), url('https://basewifhat.com/_assets/static_font_4/images/1de7434d86166b0614ff3d61cda11a54.woff') format("woff"); }
+    @font-face { font-display: swap; font-family: 'Canva Sans'; font-style: normal; font-weight: 400 700; src: url('https://basewifhat.com/_assets/static_font_4/images/cff149ee1e9d2be50ac77bcd86769d05.woff2') format("woff2"), url('https://basewifhat.com/_assets/static_font_4/images/f93a5165fac252ecfd593929c4e.woff') format("woff"); }
 
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #0052FF;
-      color: #FFFFFF;
-      font-family: 'Canva Sans', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      text-align: center;
-      overflow-x: hidden;
-      position: relative;
+      margin: 0; padding: 0; background-color: #0052FF; color: #FFFFFF;
+      font-family: 'Canva Sans', sans-serif; text-align: center;
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh; overflow-x: hidden; position: relative;
     }
 
-    canvas#bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
+    canvas#bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
 
-    .content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      max-width: 1000px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+    .nav-buttons { display: flex; gap: 15px; margin-top: 15px; z-index: 2; }
+    .nav-buttons a { background:#fff; color:#0052FF; padding:10px 18px; border-radius:8px; font-weight:700; text-decoration:none; transition:0.3s; }
+    .nav-buttons a:hover { transform:scale(1.08); box-shadow:0 0 25px #00FFFF; }
 
-    img.logo {
-      width: 180px;
-      max-width: 50%;
-      margin: 20px auto;
-      transition: transform 0.3s ease, filter 0.3s ease;
-      cursor: pointer;
-    }
-    img.logo:hover {
-      transform: scale(1.1) rotate(-5deg);
-      filter: drop-shadow(0 0 20px #FFFFFF);
-    }
+    .content { z-index: 1; max-width: 1000px; padding: 20px; }
 
-    h1, h2 {
-      animation: flash 1.5s infinite alternate;
-      margin: 10px 0;
-    }
+    img.logo { width: 180px; margin: 20px auto; cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease; }
+    img.logo:hover { transform: scale(1.1) rotate(-5deg); filter: drop-shadow(0 0 20px #FFFFFF); }
+
+    h1, h2 { animation: flash 1.5s infinite alternate; margin: 10px 0; }
 
     @keyframes flash {
-      0% { text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF; }
-      50% { text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF; }
-      100% { text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF; }
+      0% { text-shadow: 0 0 5px #FFFFFF; }
+      50% { text-shadow: 0 0 25px #00FFFF; }
+      100% { text-shadow: 0 0 5px #FFFFFF; }
     }
 
-    #countdown {
-      font-size: 2rem;
-      margin: 15px 0;
-      animation: countdownGlow 1s infinite alternate;
-    }
-
+    #countdown { font-size: 2rem; margin: 15px 0; animation: countdownGlow 1s infinite alternate; }
     @keyframes countdownGlow {
-      0% { text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF; }
-      50% { text-shadow: 0 0 15px #00FFFF, 0 0 25px #00FFFF; }
-      100% { text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF; }
+      0% { text-shadow: 0 0 10px #FFFFFF; }
+      50% { text-shadow: 0 0 25px #00FFFF; }
+      100% { text-shadow: 0 0 10px #FFFFFF; }
     }
 
-    .button {
-      background: #FFFFFF;
-      color: #0052FF;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-size: 1.25rem;
-      border-radius: 8px;
-      font-weight: 700;
-      margin: 20px 0;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF;
-    }
+    .button { background:#fff; color:#0052FF; padding:14px 28px; border-radius:8px;
+      font-weight:700; text-decoration:none; display:inline-block; margin:20px 0;
+      transition:0.3s; }
+    .button:hover { transform:scale(1.05); box-shadow:0 0 30px #00FFFF; }
 
-    iframe {
-      width: 100%;
-      border: none;
-      border-radius: 12px;
-      overflow: hidden;
-      display: block;
-      margin: 20px 0;
-    }
+    iframe { width: 100%; border: none; border-radius:12px; margin: 20px 0; }
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      z-index: 1;
-      position: relative;
-    }
-    footer img {
-      width: 60px;
-      max-width: 15%;
-      margin-bottom: 10px;
-    }
-    footer div {
-      font-family: 'Canva Sans', sans-serif;
-      font-size: 1.2rem;
-      color: #FFFFFF;
-    }
-    footer .social-links {
-      margin-top: 15px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-    }
-    footer .social-links a {
-      color: #FFFFFF;
-      text-decoration: none;
-      font-size: 1rem;
-      padding: 8px 16px;
-      border: 2px solid #FFFFFF;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    footer .social-links a:hover {
-      background: #FFFFFF;
-      color: #0052FF;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    }
+    footer { margin-top:40px; text-align:center; }
+    footer img { width:60px; margin-bottom:8px; }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
-      #countdown { font-size: 1.5rem; }
-      .button { font-size: 1rem; padding: 12px 20px; }
-      iframe { height: 320px; }
-    }
-
-    @media (max-width: 480px) {
-      h1 { font-size: 1.75rem; }
-      h2 { font-size: 1.25rem; }
-      #countdown { font-size: 1.25rem; }
-      .button { font-size: 0.95rem; padding: 10px 16px; }
-      iframe { height: 280px; }
-    }
+    @media (max-width:768px) { #countdown{font-size:1.5rem;} }
   </style>
 </head>
 <body>
 
   <canvas id="bg"></canvas>
 
+  <div class="nav-buttons">
+    <a href="https://basewifhat.com/" target="_blank">Website</a>
+    <a href="https://x.com/basewifhat4?s=21" target="_blank">X (Twitter)</a>
+    <a href="https://t.me/BASEWIFHAT1" target="_blank">Telegram</a>
+  </div>
+
   <div class="content">
-    <img class="logo" src="https://basewifhat.com/_assets/media/062ab28cbb435118cf1ac268a465843c.png" alt="$BWIF Logo"/>
-    <h1>$BWIF Flash-Hattening</h1>
-    <h2>Equip in the same flashblock or lose 🔵⚡</h2>
-    <p>World's first sub-200ms mass hat equip on Base.</p>
+    <img class="logo" src="https://basewifhat.com/_assets/media/52cc6d39394e71550e1423458ac6a4b1.png" alt="$BWIF Logo"/>
+
+    <h1>FLASH-HATTENING 500-MAN SQUAD CHALLENGE 🔵⚡️</h1>
+    <h2>WEDNESDAY → 16:11 UTC (11:11 EST)</h2>
+
+    <p>First-ever <strong>sub-200 ms</strong> mass hat equip world record attempt on Base.<br>
+    We need exactly <strong>500+ REAL humans</strong> minting in the same second.</p>
+
+    <h3>Entry Rules (NO BOTS)</h3>
+    <p>
+      1. ≥30 followers on X<br>
+      2. Active in ≥1 Telegram group<br>
+      3. Change PFP to official $BWIF logo<br>
+      4. Reply to the tweet with:<br>
+      @YourXhandle • t.me/YourTelegram • 0xYourWallet • FLASH ME
+    </p>
+
+    <h3>Prizes (total $100)</h3>
+    <p>
+      • <strong>1st:</strong> $50 USDC<br>
+      • <strong>2nd–5th:</strong> $10 USDC each<br>
+      • <strong>6th–15th:</strong> $2 USDC each
+    </p>
 
     <div id="countdown"></div>
 
-    <a class="button" href="https://app.hatsprotocol.xyz/tree/8453/1849?hatId=1849.2">EQUIP HAT NOW (Mint during flash window)</a>
+    <a class="button" href="https://app.hatsprotocol.xyz/trees/8453/1849?hatId=1849.2">CLAIM / EQUIP HAT</a>
 
-    <p>Be online at 16:10:50 UTC with Coinbase Smart Wallet.<br>
-       Tx must land in the first 200ms Flashblocks!</p>
-
-    <!-- Live Dune Embed -->
     <iframe src="https://dune.com/embeds/6248627/9962631" height="420"></iframe>
   </div>
 
-  <!-- Footer -->
   <footer>
     <img src="https://basewifhat.com/_assets/media/56cc5d833842a2b69f2da481cd430364.png" alt="BaseWIFHat Logo">
-    <div>
-      <span style="font-weight:700;">BASE</span><span style="font-weight:400;">WIF</span><span style="font-weight:700;">HAT</span>
-    </div>
-    <div class="social-links">
-      <a href="https://t.me/BASEWIFHAT1" target="_blank" rel="noopener noreferrer">Telegram</a>
-      <a href="https://x.com/basewifhat4" target="_blank" rel="noopener noreferrer">X/Twitter</a>
-    </div>
+    <div><strong>BASE</strong>WIF<strong>HAT</strong></div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/countdown@2.6.0/countdown.min.js"></script>
   <script>
-    // Countdown
-    const target = new Date("Nov 26, 2025 16:11:00 UTC").getTime();
+    const target = new Date("2025-11-26T16:11:00Z").getTime();
     setInterval(()=>{
-      const now = new Date().getTime();
-      const distance = target - now;
-      const days = Math.floor(distance / (1000*60*60*24));
-      const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
-      const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
-      const seconds = Math.floor((distance % (1000*60)) / 1000);
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-      if(distance < 0) document.getElementById("countdown").innerHTML="FLASH NOW!";
+      const now = Date.now();
+      let d = target - now;
+      if(d < 0){document.getElementById('countdown').innerHTML = "FLASH NOW!";return;}
+      const days = Math.floor(d/86400000);
+      const hours = Math.floor((d%86400000)/3600000);
+      const mins = Math.floor((d%3600000)/60000);
+      const secs = Math.floor((d%60000)/1000);
+      document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${mins}m ${secs}s`;
     },1000);
-
-    // Background Canvas & Particles
-    const canvas = document.getElementById('bg');
-    const ctx = canvas.getContext('2d');
-    let w = canvas.width = window.innerWidth;
-    let h = canvas.height = window.innerHeight;
-
-    class Particle { 
-      constructor(){this.reset();}
-      reset(){this.x=Math.random()*w; this.y=Math.random()*h; this.vx=(Math.random()-0.5)*2; this.vy=Math.random()*1+0.5; this.size=Math.random()*2+1; this.alpha=Math.random()*0.5+0.3;}
-      draw(){ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fillStyle=`rgba(0,255,255,${this.alpha})`; ctx.fill();}
-      update(){this.x+=this.vx; this.y+=this.vy; if(this.y>h||this.x<0||this.x>w)this.reset();}
-    }
-    const particles = Array.from({length:150},()=>new Particle());
-    window.addEventListener('resize', ()=>{ w=canvas.width=window.innerWidth; h=canvas.height=window.innerHeight; });
-
-    // Lightning
-    class Lightning { 
-      constructor(x,y,tx,ty){this.x=x;this.y=y;this.tx=tx;this.ty=ty;this.alpha=1;} 
-      draw(){ctx.strokeStyle=`rgba(0,255,255,${this.alpha})`;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(this.x,this.y);ctx.lineTo(this.tx,this.ty);ctx.stroke();this.alpha-=0.02;}
-    }
-    let lightnings = [];
-    canvas.addEventListener('mousemove', e => { 
-      let tx = Math.random()*w; let ty = Math.random()*h/2; 
-      lightnings.push(new Lightning(e.clientX,e.clientY,tx,ty)); 
-    });
-
-    function animate(){
-      ctx.clearRect(0,0,w,h);
-      if(Math.random()<0.01){ctx.fillStyle='rgba(255,255,255,0.1)';ctx.fillRect(0,0,w,h);}
-      particles.forEach(p=>{p.update(); p.draw();});
-      lightnings.forEach((l,i)=>{l.draw(); if(l.alpha<=0) lightnings.splice(i,1);});
-      requestAnimationFrame(animate);
-    }
-    animate();
   </script>
+
 </body>
 </html>
-
